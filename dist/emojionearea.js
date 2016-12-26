@@ -3,7 +3,7 @@
  * https://github.com/mervick/emojionearea
  * Copyright Andrey Izman and other contributors
  * Released under the MIT license
- * Date: 2016-09-27T09:32Z
+ * Date: 2016-12-26T15:45Z
  */
 (function(document, window, $) {
     'use strict';
@@ -626,6 +626,7 @@
         );
 
         editor.data(source.data());
+        editor.data('emojioneArea', self);
 
         $.each(options.attributes, function(attr, value) {
             editor.attr(attr, value);

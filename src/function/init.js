@@ -88,6 +88,7 @@ function($, emojione, blankImg, slice, css_class, emojioneSupportMode, invisible
         );
 
         editor.data(source.data());
+        editor.data('emojioneArea', self);
 
         $.each(options.attributes, function(attr, value) {
             editor.attr(attr, value);
